@@ -1,0 +1,86 @@
+body {
+  background-color: white;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  height: 100%;
+  margin: 0px;
+}
+
+a {
+  color: rgba(#000, 0.7);
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+
+  }
+}
+
+.home__container--main {
+  @include grid-container;
+  height: 100%;
+  margin: 0px;
+  justify-content: center;
+}
+
+.homepage__video-logo {
+  @include grid-column(12);
+  @include grid-shift(1);
+  background-color: #FF5D5D;
+  height: 75%;
+  padding-bottom: 10%;
+  width: 80%;
+}
+
+.footer__banner {
+  @include grid-column(12);
+  background-color: #FF5D5D;
+  height: 10em;
+
+  & button {
+    @include grid-column(3);
+    @include grid-push(4.5);
+    background-color: white;
+    border-radius: 25px;
+    border-width: 0px;
+    color: red;
+    margin-top: 1em;
+    padding: 1.5em;
+  }
+
+  & button:hover {
+    background-color: red;
+    color: white;
+  }
+
+}
+
+.copyright__type {
+  @include grid-column(3);
+  @include grid-push(9);
+  text-align: center;
+  color: white;
+}
+
+.rvnsc__logo {
+  @include grid-column(10);
+  @include grid-push(1);
+  margin-top: 5em;
+}
+
+.about_section-left {
+  @include grid-column(4);
+  @include grid-push(1);
+  height: 10vh;
+}
+
+.about_section-right {
+  @include grid-column(6);
+  @include grid-push(1);
+  padding-bottom: 2em;
+  font-size: 1.5em;
+}
+
+
